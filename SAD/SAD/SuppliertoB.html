@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/brand.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hkp1zai.css">
+    <title>MainPage</title>
+</head>
+<body>
+   <!--最上面那個不會上下動的咖啡色長方形框框跟裡面的東西-->
+    <div class="rectangle" id="rectTopic">
+        <img src="topicName.png" alt="Product Exclusive Identification Management System" id="topicPic">
+        <button type="submit" id="circle"></button>
+    </div>
+    
+    <!--白色背景的右上方選擇brand/outlet的小框框 這裡可以改成"新增訂單"-->
+    <div>
+        <select name="aspect" class="btnAspect fontBold fixed" id="aspectChange">
+            <option value="brand" class="optAspect fontRegular" selected="selected">Brand</option>
+            <option value="outlet" class="optAspect fontRegular">Outlet</option>
+        </select>
+    </div>
+
+    <!--第一列是每一行的title-->
+    <div class="rectangle fixed" id="rectInfo">
+        <div>
+            <span class="contentTitle fontBold" id="titleFirst">Order Number</span>
+            <span class="contentTitle fontBold" id="titleSecond">Brand</span>
+            <span class="contentTitle fontBold" id="titleThird">Order Status</span>
+        </div>
+    </div>
+    <br></br>
+
+    <!--這些就是訂單資料們 我總共設了五筆-->
+    <div class="contentRect fontRegular">
+        <span>000001</span>
+        <span class="contentSecond">Nike</span>
+        <span class="contentThird">Order complete</span>
+    </div>
+    <br></br>
+    <div class="contentRect fontRegular">
+        <span>000002</span>
+        <span class="contentSecond">Kangol</span>
+        <span class="contentThird">Order complete</span>
+    </div>
+    <br></br>
+    <div class="contentRect fontRegular">
+        <span>000003</span>
+        <span class="contentSecond">GU</span>
+        <span class="contentThird">
+            <button type="submit" class="btnComplete fontRegular">Production complete</button>
+        </span>
+    </div>
+    <br></br>
+    <div class="contentRect fontRegular">
+        <span>000004</span>
+        <span class="contentSecond">Uniqlo</span>
+        <span class="contentThird">
+            <button type="submit" class="btnComplete fontRegular">Production complete</button>
+        </span>  
+    </div>     
+    <br></br>
+    <div class="contentRect fontRegular">
+        <span>000005</span>
+        <span class="contentSecond">Guess</span>
+        <span class="contentThird">Order complete</span>   
+    </div>
+    <br></br>
+    <div class="contentRect fontRegular">
+        <span>000009</span>
+        <span class="contentSecond">TestBrand</span>
+        <span class="contentThird">
+            <button type="submit" class="btnComplete fontRegular" id="btnComplete">Production complete</button>
+        </span>   
+    </div>
+
+<script src="js/supplier.js"></script>
+</body>
+</html>

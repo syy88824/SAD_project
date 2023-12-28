@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/brand.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hkp1zai.css">
+    <title>Add</title>
+</head>
+<body>
+   <!--最上面那個不會上下動的咖啡色長方形框框跟裡面的東西-->
+    <div class="rectangle" id="rectTopic">
+        <img src="topicName.png" alt="Product Exclusive Identification Management System" id="topicPic">
+        <button type="submit" id="circle" background-image= "userIcon75.jpg"></button>
+    </div>
+    
+    <!--"新增訂單"-->
+    <div>
+        <button type="submit" name="add" class="btnAspect fontBold fixed" id="btnAdd"  style="color: gray; background-color: #F0EAD6;">
+           ADD</button>
+    </div>
+<!-- Order Number -->
+    <label for="orderNumber" class="contentTitle fontBold">Order Number:</label>
+    <input type="text" id="orderNumber" name="orderNumber" required style="background-color: #F0EAD6;">
+
+    <!-- Supplier Name -->
+    <label for="supplierName" class="contentTitle fontBold" >Supplier Name:</label>
+    <input type="text" id="supplierName" name="supplierName" required style="background-color: #F0EAD6;">
+    
+
+     <div class="product-container">
+      <!-- Product for="orderNumber" 
+     <label class=" fontRegular">-->
+         <!--<span>Product1</span> -->
+            <div class="addRect">
+                <span class = "fontBold word">Dress   </span>
+                <input type="number" class="inputNum fontBold distance">
+                <span class = "fontBold word">Skirt   </span>
+                <input type="number" class="inputNum fontBold">
+            </div>
+            <div class="addRect">
+                <span class = "fontBold word">T-shirt   </span>
+                <input type="number" class="inputNum fontBold distance">
+                <span class = "fontBold word">Sweater   </span>
+                <input type="number" class="inputNum fontBold">
+            </div>
+            <div class="addRect">
+                <span class = "fontBold word">Coat   </span>
+                <input type="number" class="inputNum fontBold distance">
+                <span class = "fontBold word">Vest   </span>
+                <input type="number" class="inputNum fontBold">
+            </div>
+            <div class="addRect">
+                <span class = "fontBold word">Jeans   </span>
+                <input type="number" class="inputNum fontBold distance">
+                <span class = "fontBold word">Pants   </span>
+                <input type="number" class="inputNum fontBold">
+            </div>
+                <!--這裡選單我不確定要放什麼就先寫O1 O2
+             <option value="brand" class="optAspect fontRegular">Option1</option>
+             <option value="outlet" class="optAspect fontRegular">Option2</option>
+            </select>
+          </span>
+    </label>
+
+     <label for="orderNumber" class="contentRect fontRegular">
+        <span>Product2</span>
+            <select name="Clothes" class="btnAspect2 fontBold" id="Clothes">
+             <option value="brand" class="optAspect fontRegular">Option1</option>
+             <option value="outlet" class="optAspect fontRegular">Option2</option>
+            </select>
+          </span>
+    </label>
+
+     <label for="orderNumber" class="contentRect fontRegular">
+        <span>Product3</span>
+            <select name="Product3" class="btnAspect2 fontBold" id="Product3">
+             <option value="brand" class="optAspect fontRegular">Option1</option>
+             <option value="outlet" class="optAspect fontRegular">Option2</option>
+            </select>
+          </span>
+    </label>
+
+     <label for="orderNumber" class="contentRect fontRegular">
+        <span>Product4</span>
+            <select name="Product4" class="btnAspect2 fontBold" id="Product4">
+             <option value="brand" class="optAspect fontRegular">Option1</option>
+             <option value="outlet" class="optAspect fontRegular">Option2</option>
+            </select>
+          </span>
+    </label>
+
+    <label for="product5" class="contentRect fontRegular">
+         <span>Product5</span>
+            <select name="Product5" class="btnAspect2 fontBold" id="Product5">
+                <option value="brand" class="optAspect fontRegular">Option1</option>
+                <option value="outlet" class="optAspect fontRegular">Option2 </option>
+            </select>
+        </label>-->
+        
+</div>
+
+<script>
+    var add = document.getElementById("btnAdd");
+    add.addEventListener("click", function(){
+   /*window.alert("Order Addition Succeed");*/
+    window.location.href = "Brand.html";
+});
+</script>
+</body>
+</html>

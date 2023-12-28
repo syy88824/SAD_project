@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/brand.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hkp1zai.css">
+    <title>MainPage</title>
+</head>
+<body>
+   
+    <div class="rectangle" id="rectTopic">
+        <img src="topicName.png" alt="Product Exclusive Identification Management System" id="topicPic">
+        <button type="submit" id="circle"></button>
+    </div>
+    
+    <div>
+        <select name="aspect" class="btnAspect fontBold fixed" id="aspectChange">
+            <option value="brand" class="optAspect fontRegular">Brand</option>
+            <option value="outlet" class="optAspect fontRegular" selected="selected">Outlet</option>
+        </select>
+    </div>
+    <div class="rectangle fixed" id="rectInfo">
+        <div>
+            <span class="contentTitle fontBold" id="titleFirst">Order Number</span>
+            <span class="contentTitle fontBold" id="titleSecond">Outlet</span>
+            <span class="contentTitle fontBold" id="titleThird">Order Status</span>
+        </div>
+    </div>
+    <br></br>
+    <div class="contentRect fontRegular">
+        <span>000001</span>
+        <span class="contentSecond">Eda</span>
+        <span class="contentThird finish">Order complete</span>
+    </div>
+    <br></br>
+    <div class="contentRect fontRegular">
+        <span>000002</span>
+        <span class="contentSecond">Lipao</span>
+        <span class="contentThird finish">Order complete</span>
+    </div>
+    <br></br>
+    <div class="contentRect fontRegular">
+        <span>000003</span>
+        <span class="contentSecond">Mitsui_Linkou</span>
+        <span class="finishWord2 problem" id="spanWrong">Document incorrect</span>
+        <button type="submit" class="btnUpload fontRegular" id="btnReason">Reason</button>
+        
+    </div>
+    <br></br>
+    <div class="contentRect fontRegular">
+        <span>000004</span>
+        <span class="contentSecond">TestOutlet</span>
+        <span>
+            <input type="file" name="Upload the file" class="fontRegular" id="inputFile">
+            <button type="submit" class="btnUpload fontRegular" id="idBtnUpload">Upload</button>
+        </span>  
+    </div>     
+    <br></br>
+    <div class="contentRect fontRegular">
+        <span>000005</span>
+        <span class="contentSecond">Gloria</span>
+        <span class="contentThird finish">Order complete</span>   
+    </div>
+
+<script src="js/supplier.js"></script>
+</body>
+</html>
